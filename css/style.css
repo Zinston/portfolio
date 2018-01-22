@@ -30,11 +30,35 @@ header {
 	text-transform: uppercase;
 }
 
-.main-image {}
+.main-image {
+	width: 100%;
+	margin-top: 30px;
+}
+.main-image img {
+	width: 100%;
+}
 
-.featured-work-container {}
-.featured-work-title {}
-.featured-work {}
-.work-image {}
-.work-title {}
-.work-link {}
+.featured-work-title {
+	width: 100%;
+}
+
+.featured-work-container {
+	width: 100%;
+}
+.featured-work-container :nth-child(even) {
+	margin: 0 2%;
+}
+
+.featured-work {
+	display: inline-block;
+	width: 32%;
+	margin: 0;
+	padding: 0;
+}
+.work-image img {
+	width: 100%;
+}
+.work-title {
+}
+.work-link {
+}
