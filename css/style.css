@@ -20,26 +20,31 @@ header {
 	width: 79%;
 	text-align: right;
 	vertical-align: top;
+	color: #2d3c49;
 }
 .title {
 	margin: 0 0 10px 0;
 	text-transform: uppercase;
+	font-size: 40px;
 }
 .subtitle {
 	margin: 0;
 	text-transform: uppercase;
+	font-size: 20px;
 }
 
 .main-image {
 	width: 100%;
-	margin-top: 30px;
+	margin: 30px 0;
 }
 .main-image img {
 	width: 100%;
 }
 
-.featured-work-title {
-	width: 100%;
+.featured-work-title h3 {
+	color: #7d97ad;
+	font-size: 30px;
+	margin: 0 0 20px 10px;
 }
 
 .featured-work-container {
@@ -58,7 +63,17 @@ header {
 .work-image img {
 	width: 100%;
 }
+
+.work-text {
+	text-align: center;
+	color: #2d3c49;
+}
 .work-title {
+	margin: 5px;
+	font-size: 30px;
+	text-transform: uppercase;
 }
 .work-link {
+	text-decoration: none;
+	color: inherit;
 }
