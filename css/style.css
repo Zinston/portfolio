@@ -1,6 +1,34 @@
-.logo {}
-.title {}
-.subtitle {}
+body {
+	width: 80%;
+	margin: auto;
+}
+
+header {
+	margin-top: 50px;
+	border-bottom: solid 3px #7d97ad;
+}
+
+.logo {
+	display: inline-block;
+	width: 20%;
+}
+.logo img {
+	max-width: 100px;
+}
+.header-text {
+	display: inline-block;
+	width: 79%;
+	text-align: right;
+	vertical-align: top;
+}
+.title {
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+}
+.subtitle {
+	margin: 0;
+	text-transform: uppercase;
+}
 
 .main-image {}
 
