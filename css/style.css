@@ -106,9 +106,6 @@ main {
 	flex-wrap: wrap;
 	width: 100%;
 }
-.featured-work-container :nth-child(even) {
-	margin: 0 2%;
-}
 
 @media screen and (min-width: 1200px) {
 	.featured-work {
@@ -116,11 +113,14 @@ main {
 		margin: 0;
 		padding: 0;
 	}
+	.featured-work-container :nth-child(even) {
+		margin: 0 2%;
+	}
 }
 @media screen and (max-width: 1199px) {
 	.featured-work {
 		width: 100%;
-		margin: 0 0 50px 0;
+		margin: 0 0 40px 0;
 		padding: 0;
 	}
 }
@@ -142,4 +142,23 @@ main {
 	font-size: 15px;
 	text-decoration: none;
 	color: inherit;
+
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+.work-text p {
+	margin: 0;
 }
