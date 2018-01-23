@@ -8,21 +8,23 @@ body {
 }
 
 header {
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 50px;
 	padding-bottom: 30px;
 	border-bottom: solid 3px #7d97ad;
 }
 
 .logo {
-	display: inline-block;
-	width: 20%;
+	width: 100px;
+	max-width: 15%;
+	min-width: 72px;
 }
 .logo img {
-	max-width: 100px;
+	width: 100%;
 }
 .header-text {
-	display: inline-block;
-	width: 79%;
+	margin-left: auto;
 	text-align: right;
 	vertical-align: top;
 	color: #2d3c49;
@@ -30,14 +32,45 @@ header {
 .title {
 	margin: 0 0 10px 0;
 	text-transform: uppercase;
-	font-size: 55px;
 	font-weight: 300;
+}
+@media screen and (min-width: 730px) {
+	.title {
+		font-size: 55px;
+	}
+}
+@media screen and (min-width: 620px) and (max-width: 729px) {
+	.title {
+		font-size: 45px;
+	}
+}
+@media screen and (min-width: 520px) and (max-width: 619px) {
+	.title {
+		font-size: 35px;
+	}
+}
+@media screen and (min-width: 390px) and (max-width: 519px) {
+	.title {
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 389px) {
+	.title {
+		font-size: 20px;
+	}
+	.subtitle {
+		font-size: 15px;
+	}
 }
 .subtitle {
 	margin: 0;
 	text-transform: uppercase;
-	font-size: 20px;
 	font-weight: 400;
+}
+@media screen and (min-width: 390px) {
+	.subtitle {
+		font-size: 20px;
+	}
 }
 
 main {
@@ -80,7 +113,7 @@ main {
 @media screen and (max-width: 1199px) {
 	.featured-work {
 		width: 100%;
-		margin: 10px 0;
+		margin: 0 0 50px 0;
 		padding: 0;
 	}
 }
