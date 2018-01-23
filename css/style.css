@@ -1,3 +1,5 @@
+/* General */
+
 * {
 	font-family: 'Quicksand', sans-serif;
 }
@@ -6,6 +8,8 @@ body {
 	width: 80%;
 	margin: auto;
 }
+
+/* Header */
 
 header {
 	display: flex;
@@ -72,6 +76,8 @@ header {
 		font-size: 20px;
 	}
 }
+
+/* Main */
 
 main {
 	margin-bottom: 50px;
