@@ -176,6 +176,7 @@ main {
 	hyphens: auto;
 }
 
-.work-text p {
-	margin: 0;
+.copyright {
+	color: #d6d6d6;
+	text-align: center;
 }
